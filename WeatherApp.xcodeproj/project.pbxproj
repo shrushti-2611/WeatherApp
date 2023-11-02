@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485C233E2AF0C54700B6852D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C233D2AF0C54700B6852D /* SplashScreen.swift */; };
+		485C23402AF0D20200B6852D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C233F2AF0D20200B6852D /* WeatherView.swift */; };
+		485C23442AF0F9D200B6852D /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C23432AF0F9D200B6852D /* ToggleButton.swift */; };
 		48967B022AF0C0C400325093 /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967B012AF0C0C400325093 /* WeatherAppApp.swift */; };
-		48967B042AF0C0C400325093 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967B032AF0C0C400325093 /* ContentView.swift */; };
+		48967B042AF0C0C400325093 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967B032AF0C0C400325093 /* HomeView.swift */; };
 		48967B062AF0C0C600325093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48967B052AF0C0C600325093 /* Assets.xcassets */; };
 		48967B092AF0C0C600325093 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48967B082AF0C0C600325093 /* Preview Assets.xcassets */; };
+		48B176CA2AF3762F002B8F1F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B176C92AF3762F002B8F1F /* HeaderView.swift */; };
+		48B176CC2AF38707002B8F1F /* roboto-family in Resources */ = {isa = PBXBuildFile; fileRef = 48B176CB2AF38707002B8F1F /* roboto-family */; };
+		48B176CF2AF3972F002B8F1F /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B176CE2AF3972F002B8F1F /* BottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		485C233D2AF0C54700B6852D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		485C233F2AF0D20200B6852D /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		485C23432AF0F9D200B6852D /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		48967AFE2AF0C0C400325093 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48967B012AF0C0C400325093 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
-		48967B032AF0C0C400325093 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48967B032AF0C0C400325093 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		48967B052AF0C0C600325093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48967B082AF0C0C600325093 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48B176C92AF3762F002B8F1F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		48B176CB2AF38707002B8F1F /* roboto-family */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "roboto-family"; sourceTree = "<group>"; };
+		48B176CE2AF3972F002B8F1F /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485C23372AF0C47900B6852D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		485C23382AF0C48200B6852D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		485C23392AF0C48D00B6852D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				485C233F2AF0D20200B6852D /* WeatherView.swift */,
+				485C23432AF0F9D200B6852D /* ToggleButton.swift */,
+				48B176C92AF3762F002B8F1F /* HeaderView.swift */,
+				48B176CE2AF3972F002B8F1F /* BottomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		485C233A2AF0C49300B6852D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48967B032AF0C0C400325093 /* HomeView.swift */,
+				485C233D2AF0C54700B6852D /* SplashScreen.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		485C233B2AF0C4A700B6852D /* AppHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				48967B052AF0C0C600325093 /* Assets.xcassets */,
+				48B176CB2AF38707002B8F1F /* roboto-family */,
+				48967B012AF0C0C400325093 /* WeatherAppApp.swift */,
+			);
+			path = AppHelpers;
+			sourceTree = "<group>";
+		};
+		485C233C2AF0C4F900B6852D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		48967AF52AF0C0C400325093 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +114,12 @@
 		48967B002AF0C0C400325093 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				48967B012AF0C0C400325093 /* WeatherAppApp.swift */,
-				48967B032AF0C0C400325093 /* ContentView.swift */,
-				48967B052AF0C0C600325093 /* Assets.xcassets */,
+				485C233C2AF0C4F900B6852D /* Network */,
+				485C233B2AF0C4A700B6852D /* AppHelpers */,
+				485C233A2AF0C49300B6852D /* ViewController */,
+				485C23392AF0C48D00B6852D /* View */,
+				485C23382AF0C48200B6852D /* ViewModel */,
+				485C23372AF0C47900B6852D /* Model */,
 				48967B072AF0C0C600325093 /* Preview Content */,
 			);
 			path = WeatherApp;
@@ -125,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B176CC2AF38707002B8F1F /* roboto-family in Resources */,
 				48967B092AF0C0C600325093 /* Preview Assets.xcassets in Resources */,
 				48967B062AF0C0C600325093 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48967B042AF0C0C400325093 /* ContentView.swift in Sources */,
+				485C233E2AF0C54700B6852D /* SplashScreen.swift in Sources */,
+				485C23442AF0F9D200B6852D /* ToggleButton.swift in Sources */,
+				48967B042AF0C0C400325093 /* HomeView.swift in Sources */,
 				48967B022AF0C0C400325093 /* WeatherAppApp.swift in Sources */,
+				48B176CF2AF3972F002B8F1F /* BottomView.swift in Sources */,
+				48B176CA2AF3762F002B8F1F /* HeaderView.swift in Sources */,
+				485C23402AF0D20200B6852D /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
